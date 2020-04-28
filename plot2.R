@@ -17,7 +17,7 @@ reqData <- data[as.character(data$V1) == "1/2/2007" | data$V1 == "2/2/2007", ]
 reqData$V3 <- as.numeric(as.character(reqData$V3))
 
 # plotting
-with(reqData, plot(timeStamp, V3, type="l", ylab="Global Active Power (kilowatts"))
+with(reqData, plot(timeStamp, V3, type="l", ylab="Global Active Power (kilowatts)", xlab=""))
 
 # sending to a png graphics device
 dev.copy(png, file="plot2.png")
