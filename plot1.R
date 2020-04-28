@@ -8,7 +8,7 @@
 library(lubridate)
 
 # reading the data
-#data <- read.table("household_power_consumption.txt", sep=";")
+data <- read.table("household_power_consumption.txt", sep=";")
 
 # converting dates and times to R formats
 data$timeStamp <- with(data, dmy_hms(paste(V1, V2)))
