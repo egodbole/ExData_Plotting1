@@ -12,7 +12,6 @@ library(lubridate)
 
 # converting dates and times to R formats
 #data$V1 <- dmy(data$V1)
-#data$V2 <- hms(data$V2)
 
 # selecting the required data for 2007-02-01 and 2007-02-01
 reqData <- data[data$V1==ymd("2007-02-01") | data$V1==ymd("2007-02-02"), ]
